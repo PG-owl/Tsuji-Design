@@ -126,7 +126,15 @@ header li {
   padding: 0 10%;
 }
 
-.work-detail {
+.work-content h2 {
+  margin: 80px;
+}
 
+.work-content img {
+  margin: 0 50px;
+}
+
+.btn {
+  margin: 30px;
 }
 /* footer */
