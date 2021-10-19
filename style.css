@@ -81,5 +81,20 @@ header li {
   letter-spacing: 5px
 }
 
+.service-wrapper {
+  text-align: center;
+}
 
+.service-title h1{
+  opacity: 0.7;
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin: 80px;
+}
+
+.service-content h2,h6 {
+  opacity: 0.7;
+  letter-spacing: 2px;
+  margin: 0;
+}
 /* footer */
