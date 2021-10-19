@@ -1,4 +1,6 @@
 /* common */
+
+
 body {
   margin: 0;
 }
@@ -16,7 +18,9 @@ ul {
 }
 
 .container {
+  margin: 100px 0;
 }
+
 /* header */
 header{
   background: #efefef;
@@ -25,7 +29,7 @@ header{
   z-index: 9999;
 }
 
-header .container {
+header .header-container {
   padding: 25px 0;
 }
 
@@ -81,20 +85,48 @@ header li {
   letter-spacing: 5px
 }
 
-.service-wrapper {
+.service-wrapper, .work-wrapper {
   text-align: center;
 }
 
-.service-title h1{
-  opacity: 0.7;
+.service-title h1, .work-title h1{
+  opacity: 0.9;
   font-size: 35px;
   letter-spacing: 3px;
-  margin: 80px;
+  margin: px;
 }
 
-.service-content h2,h6 {
+.service-content, .work-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+}
+
+.service-content h2,.work-content h2 {
+  opacity: 0.9;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.service-content h6 {
   opacity: 0.7;
   letter-spacing: 2px;
   margin: 0;
+}
+
+.service-content p {
+  opacity: 0.7;
+  letter-spacing: 2px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: left;
+  padding: 0 10%;
+}
+
+.work-detail {
+
 }
 /* footer */
