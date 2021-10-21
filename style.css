@@ -132,6 +132,7 @@ header li {
 
 .work-content img {
   margin: 0 50px;
+  display: block;
 }
 
 .btn {
