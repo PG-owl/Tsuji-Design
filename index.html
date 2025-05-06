@@ -2,148 +2,217 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Tsuji-Design</title>
-    <link rel="icon" href="images\icons-ふくろう.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ツジのポートフォリオサイト。ツジの経歴や実績についてご紹介します。"
+    />
+    <title>Tsuji's Portfolio</title>
+    <link rel="icon" href="images/icons-ふくろう.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header-container">
-        <div class="title">
-          <h2 class="header-logo">Tsuji Design</h2>
+        <div class="header-logo">
+          <h1>Tsuji's Portfolio</h1>
         </div>
-        <div class="header">
+        <nav class="header-nav">
           <ul class="header-list">
-            <li>
-              <a href="#">TOP</a>
-            </li>
-            <li>
-              <img src="images\icons-twitter.png" width="40" height="40" />
-            </li>
-            <li>
-              <img
-                src="images\icons-インスタグラム.png"
-                width="40"
-                height="40"
-              />
-            </li>
+            <li><a href="#" aria-current="page">TOP</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
-        <div class="menu">
-          <ul class="menu-list">
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Work</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+        </nav>
       </div>
     </header>
+
     <main>
-      <div class="main-container">
-        <div class="top-wrapper">
+      <section class="hero">
+        <div class="hero-container">
           <h1>To tell you everything</h1>
-          <h2>あなたのイメージ、デザインします</h2>
+          <p class="hero-subtitle">あなたのイメージ、デザインします</p>
         </div>
-        <div class="service-wrapper">
-          <div class="container">
-            <div class="service-title">
-              <h1>Service Contents</h1>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img
+                src="images/profile.png"
+                alt="プロフィール画像"
+                width="300"
+                height="300"
+                loading="lazy"
+              />
             </div>
-          </div>
-          <div class="container">
-            <div class="service-content">
-              <h2>ディレクション</h2>
-              <h6>DIRECTION</h6>
-              <img src="images\icons-direction.png" alt="derection" />
+            <div class="about-text">
+              <h3>ツジ</h3>
+              <p class="about-subtitle">Web Engineer</p>
               <p>
-                お客様の要望をヒアリングし、現状の問題点を洗い出し、
-                効果的なプランを作成いたします。
-                制作ではデザインに入る前の事前の準備が特に重要になります。
-                何が必要で何が必要でないのかを判断し、
-                費用対効果の高いWebサイトを作るための土台を作ります。
+                東京都在住。 <br />
+                結婚式場を始めとした会場装飾の業務に携り。お客様のヒアリングから、実際の制作・納品まで一通りを担当。ご要望に真摯に向き合う姿勢や迅速に対処するスキルを培ってまいりました。
+                その後、独学でWeb開発についてのスキルを習得、Web系の受託開発企業で開発業務を2年経験。現在はWeb系自社開発企業にてWebエンジニアとして活動しています。<br />
+                デザインとコーディングの他に、バックエンドやインフラといったサーバーサイドの知識も持ち合わせおりますので、気軽にご相談ください。
               </p>
-            </div>
-            <div class="service-content">
-              <h2>デザイン</h2>
-              <h6>DESIGN</h6>
-              <img src="images\icons-design.png" alt="design" />
-              <p>
-                ヒアリングに基づいたプランに沿って、デザインを作成いたします。
-                人の使うものであることを常に意識して、使う人が迷わない、
-                目的を達成できるデザインを心がけています。インターフェースの
-                重要性が増す中でデザインの役割を理解し、そのプランに最適な提案をさせていただきます。
-              </p>
-            </div>
-            <div class="service-content">
-              <h2>スキル</h2>
-              <h6>SKILL</h6>
-              <img src="images\icons-skill.png" alt="skill" />
-              <p>
-                使用可能スキルはPhotoshop、HTML・CSS、JavaScript、Wordpressです。
-                Photoshopを使用したバナー・LPの作成、スマートフォンサイト、ワードプレスを
-                使用した更新性の高いサイト、Javascriptを使用した動きのあるサイトなど、
-                様々なサイトのコーディングを行っております。
-              </p>
+              <div class="about-skills">
+                <h4>スキルセット</h4>
+                <ul>
+                  <li>HTML / CSS</li>
+                  <li>TypeScript</li>
+                  <li>React / Next.js</li>
+                  <li>AWS</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="work-wrapper">
-          <div class="container">
-            <div class="work-title">
-              <h1>Work</h1>
-            </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="section-title">Service Contents</h2>
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>コーディング</h3>
+              <p class="service-subtitle">CORDING</p>
+              <img
+                src="images/icons-direction.png"
+                alt="direction"
+                width="80"
+                height="80"
+                loading="lazy"
+              />
+              <p class="service-text">
+                HTML/CSS/JavaScriptなどを使用して、デザインカンプからのコーディングをいたします。またCSS設計（BEM）も取り入れ、保守性の高いサイトを作らせていただきます。デザインに悩まれている方も柔軟に提案させていただきますので、ぜひお気軽にご相談ください。
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>HP修正/レスポンシブ対応</h3>
+              <p class="service-subtitle">REFACTOR</p>
+              <img
+                src="images/icons-design.png"
+                alt="design"
+                width="80"
+                height="80"
+                loading="lazy"
+              />
+              <p class="service-text">
+                既存サイトの修正やページ追加、機能追加等を承ります。スマートフォンやタブレットなど各種デバイスへのレスポンシブ対応をさせていただきます。サイトの表示崩れや動作の不具合、パフォーマンス改善など、お客様のご要望に応じて柔軟に対応させていただきます。
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Web開発</h3>
+              <p class="service-subtitle">WEB DEVELOP</p>
+              <img
+                src="images/icons-skill.png"
+                alt="skill"
+                width="80"
+                height="80"
+                loading="lazy"
+              />
+              <p class="service-text">
+                使用可能スキルはHTML・CSS、TypeScript/React/Next.js、AWSです。フロントエンド開発からインフラ構築まで、幅広い技術スタックを活用してWebアプリケーションの開発を行います。お客様のニーズに合わせて柔軟に提案させていただきます。
+              </p>
+            </article>
           </div>
-          <div class="container">
-            <div class="work-content">
-              <h2>Web Site</h2>
+        </div>
+      </section>
+
+      <section class="works" id="work">
+        <div class="container">
+          <h2 class="section-title">Work</h2>
+          <div class="works-grid">
+            <article class="work-card">
+              <h3>Web Site</h3>
               <div class="work-detail">
                 <img
-                  src="images\website-sample.png"
+                  src="images/website-sample.png"
                   alt="ウェブサイト"
                   width="360"
                   height="240"
+                  loading="lazy"
                 />
-                <a href="#">
-                  <button type="button" class="btn work-btn">
-                    詳細はこちら
-                  </button>
-                </a>
+                <a href="#" class="btn work-btn">詳細はこちら</a>
               </div>
-            </div>
-            <div class="work-content">
-              <h2>Other</h2>
+            </article>
+            <article class="work-card">
+              <h3>Other</h3>
               <div class="work-detail">
-                <img src="images\brank.png" alt="" width="360" height="240" />
-                <a href="#">
-                  <button type="button" class="btn work-btn">
-                    詳細はこちら
-                  </button>
-                </a>
+                <img
+                  src="images/brank.png"
+                  alt=""
+                  width="360"
+                  height="240"
+                  loading="lazy"
+                />
+                <a href="#" class="btn work-btn">詳細はこちら</a>
               </div>
-            </div>
-            <div class="work-content">
-              <h2>Other</h2>
+            </article>
+            <article class="work-card">
+              <h3>Other</h3>
               <div class="work-detail">
-                <img src="images\brank.png" alt="" width="360" height="240" />
-                <a href="#">
-                  <button type="button" class="btn work-btn">
-                    詳細はこちら
-                  </button>
-                </a>
+                <img
+                  src="images/brank.png"
+                  alt=""
+                  width="360"
+                  height="240"
+                  loading="lazy"
+                />
+                <a href="#" class="btn work-btn">詳細はこちら</a>
               </div>
-            </div>
+            </article>
           </div>
         </div>
-      </div>
+      </section>
     </main>
-    <footer>
-      <p>©Tsuji-Design</p>
+
+    <footer class="footer">
+      <p>&copy; <span id="current-year"></span> Tsuji-Design</p>
     </footer>
+
+    <script src="src/ts/works.ts" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // 年号の更新
+        $("#current-year").text(new Date().getFullYear());
+
+        // Intersection Observerの設定
+        const observerOptions = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.1,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const $card = $(entry.target);
+              if (!$card.hasClass("animated")) {
+                $card.addClass("animated");
+                $card.animate(
+                  {
+                    opacity: 1,
+                    transform: "scale(1)",
+                  },
+                  500
+                );
+              }
+            }
+          });
+        }, observerOptions);
+
+        // 各ワークカードにオブザーバーを設定
+        $(".work-card").each(function () {
+          observer.observe(this);
+        });
+      });
+    </script>
   </body>
 </html>
